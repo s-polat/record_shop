@@ -1,7 +1,10 @@
 import { Low, JSONFile } from 'lowdb'
 
+
+//lowdb de database olusturmak icin gerekli file.json seklinde bir database olusturduk burda
 const db = new Low(new JSONFile('file.json'))
 await db.read()
+
 db.data = db.data || { records: [] } 
 
 
@@ -22,7 +25,7 @@ export function getAllRecords(req,res) {
 
    
 
-    res.send(db.data.records)
+    res.json(db.data.records)
 
     // Alle records zurück geben.
 }
