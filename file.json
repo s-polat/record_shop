@@ -1,25 +1,11 @@
 {
   "records": [
     {
-      "title": "Bad Habbit",
-      "artist": "Ed Sheeran",
-      "year": "2021",
-      "cover_image": "https://artglider.com/wp-content/uploads/2019/12/custom-vinyl-record-covers-and-artworks-670x300.png",
-      "price": 11
-    },
-    {
-      "title": "Bad Habbit",
-      "artist": "Ed Sheeran",
-      "year": "2021",
-      "cover_image": "https://artglider.com/wp-content/uploads/2019/12/custom-vinyl-record-covers-and-artworks-670x300.png",
-      "price": 11
-    },
-    {
-      "title": "Bad Habbit",
-      "artist": "Ed Sheeran",
-      "year": "2021",
-      "cover_image": "https://artglider.com/wp-content/uploads/2019/12/custom-vinyl-record-covers-and-artworks-670x300.png",
-      "price": 11
+      "title": "Egal",
+      "artist": "DJ Egal",
+      "year": "2015",
+      "cover": "",
+      "price": 5.5
     }
   ]
 }

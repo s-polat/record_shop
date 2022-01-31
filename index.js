@@ -1,5 +1,6 @@
 import express from "express";
-import { addRecord, getAllRecords} from './controller/records.controller.js';
+import recordsRoutes from './routes/records.routes.js';
+import usersRouter from './routes/users.routes.js';
 
  /* baslangicta npm init , npm install express lowdb, terminale yazilarak gerekli paketler yüklenir
  
@@ -9,12 +10,10 @@ const PORT = 4000;
 const app = express();
 
 app.use(express.json()); //bu komut olmadan posttan gelen veriyi dataya alamayiz
+app.use(recordsRoutes);
+app.use(usersRouter);
 
 
-app.post('/api/records', addRecord )
-
-
-app.get('/api/records', getAllRecords )
 
 // Start server
 app.listen(PORT, () => {
