@@ -1,3 +1,4 @@
+
 import db from '../database.js'
 
 
@@ -28,10 +29,12 @@ export async function addRecord(req, res){
 
 export function getAllRecords(req,res) {
 
-    res.json(db.data.records)
+    res.json(db.data)
 
     // Alle records zurück geben.
 }
+
+
 
 
 

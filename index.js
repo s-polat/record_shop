@@ -1,4 +1,5 @@
-import express from "express";
+import express from "express"
+import { getAllRecords } from "./controller/records.controller.js";
 import recordsRoutes from './routes/records.routes.js';
 import usersRouter from './routes/users.routes.js';
 
@@ -10,6 +11,8 @@ const PORT = 4000;
 const app = express();
 
 app.use(express.json()); //bu komut olmadan posttan gelen veriyi dataya alamayiz
+
+app.use('/api/', getAllRecords)
 app.use(recordsRoutes);
 app.use(usersRouter);
 

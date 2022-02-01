@@ -7,6 +7,7 @@
   "nodemonConfig": {
     "ignore": ["database.json", "logs.json", "file.json"]
 },
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
