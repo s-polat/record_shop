@@ -5,9 +5,12 @@
   "main": "index.js",
   "type": "module",
   "nodemonConfig": {
-    "ignore": ["database.json", "logs.json", "file.json"]
-},
-
+    "ignore": [
+      "database.json",
+      "logs.json",
+      "file.json"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/s-polat/record_shop#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "lowdb": "^3.0.0"
   }

@@ -16,7 +16,7 @@ export async function addRecord(req, res){
         artist: data.artist,
         year: data.year,
         price: data.price,
-        cover: '',
+        cover: data.cover,
     };
 
     db.data.records.push(record);
