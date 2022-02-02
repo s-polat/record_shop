@@ -8,8 +8,9 @@ import cors from 'cors'
  
  sonra import kullanabilmek icin package.json a "type": "module", yapistirmamiz lazim*/
 
-const PORT = 4000;
-const app = express();
+
+ const PORT = process.env.PORT || 4000;
+ const app = express();
 
 app.use(cors())
 app.use(express.json()); //bu komut olmadan posttan gelen veriyi dataya alamayiz
